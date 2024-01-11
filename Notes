@@ -1,0 +1,12 @@
+Cypress Assertions--------
+
+
+1->  Implicit Assertions
+
+    Should
+    And
+
+2-> Explicit Assertions
+
+    expect
+    assert

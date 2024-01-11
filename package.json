@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "cypress": "^13.6.2",
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
