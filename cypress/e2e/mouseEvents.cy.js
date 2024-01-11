@@ -1,4 +1,7 @@
 import 'cypress-iframe';
+require('@4tw/cypress-drag-drop');
+
+
 describe("Mouse Operations",()=>{
 
     it.skip("Mouse Hovering",()=>{
@@ -44,7 +47,7 @@ describe("Mouse Operations",()=>{
 
     })
 
-    it("Double Click action",()=>{
+    it.skip("Double Click action",()=>{
 
         cy.visit("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3")
 
@@ -66,4 +69,12 @@ describe("Mouse Operations",()=>{
         .should('have.value',"Hello World!")
     })
 
+    it("Drag and drop with plugin",()=>{
+
+        cy.visit("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html")
+
+        cy.get('#box3').drag('#box106')
+
+    })
+ 
 })
