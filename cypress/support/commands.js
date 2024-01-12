@@ -35,3 +35,11 @@ Cypress.Commands.add('getIFrame',(iFrame)=>{
         .then(cy.wrap);
 
 })
+
+//Custom command for clicking on link using label
+
+Cypress.Commands.add('clickLink',(label)=>{
+
+        cy.get('a').contains(label).click();
+
+})

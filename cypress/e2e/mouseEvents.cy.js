@@ -69,11 +69,20 @@ describe("Mouse Operations",()=>{
         .should('have.value',"Hello World!")
     })
 
-    it("Drag and drop with plugin",()=>{
+    // it("Drag and drop with plugin",()=>{
 
-        cy.visit("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html")
+    //     cy.visit("https://www.globalsqa.com/demo-site/draganddrop/")
 
-        cy.get('#box3').drag('#box106')
+    //     cy.frameLoaded(".demo-frame.lazyloaded")
+
+    // })
+
+    it("Scrolling Page",()=>{
+
+        cy.visit("https://www.countries-ofthe-world.com/flags-of-the-world.html")
+
+        cy.get(':nth-child(1) > tbody > :nth-child(86) > :nth-child(1) > img')
+        .scrollIntoView({duration:3000});
 
     })
  
